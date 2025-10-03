@@ -1,86 +1,150 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Arman — Personal Site</title>
-<link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arman — Applied Math & AI</title>
+
+  <!-- Google Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<header id="site-header" class="header-wrap">
-  <nav class="nav container" aria-label="Main navigation">
-<a class="brand" href="#home">Arman</a>
-<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
-<span class="hamburger"></span>
-</button>
+  <!-- Header (sticky glass) -->
+  <header class="header-wrap" role="banner">
+    <nav id="site-header" class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">Arman<span class="brand-dot">.</span></a>
 
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
 
-<ul id="nav-menu" class="nav-menu">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
+      <ul id="nav-menu" class="nav-menu" role="menubar">
+        <li role="none"><a role="menuitem" href="#home" class="nav-link">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about" class="nav-link">About</a></li>
+        <li role="none"><a role="menuitem" href="#projects" class="nav-link">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main id="main-content">
-<!-- HOME / HERO -->
-<section id="home" class="container hero">
-<div class="hero-text">
-<h1>Arman — Applied Math & AI</h1>
-<p class="lead">student focused on AI, math & computational data mining.</p>
-<p>
-<a class="btn" href="#projects">View projects</a>
-<a class="btn ghost" href="#about">About me</a>
-</p>
-</div>
-<div class="hero-image" aria-hidden="true">
-<!-- optional image or SVG placeholder -->
-<div class="avatar">A</div>
-</div>
-</section>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="container hero">
+      <div class="hero-left">
+        <p class="eyebrow">Hi — I’m</p>
+        <h1>Arman Borjikhani</h1>
+        <p class="lead">Applied mathematics student targeting a direct PhD in AI & Computational Data Mining. I build fast numerical solvers and research NeuroAI.</p>
 
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn ghost" href="#about">About me</a>
+        </div>
 
-<!-- ABOUT -->
-<section id="about" class="container about">
-<h2>About Me</h2>
-<div class="about-grid">
-<div class="about-bio">
-<p>I am an applied mathematics student. My interests include linear algebra, LLMs, and NeuroAI.</p>
-<ul class="skills">
-<li>Python, NumPy, PyTorch</li>
-<li>& others</li>
-<li></li>
-</ul>
-</div>
-<div class="about-photo">
-<img src="assets/images/avatar-placeholder.png" alt="Arman" />
-</div>
-</div>
-</section>
+        <ul class="meta-list">
+          <li><strong>Skills:</strong> Python · NumPy · PyTorch</li>
+          <li><strong>Focus:</strong> Numerical linear algebra · LLMs · NeuroAI</li>
+        </ul>
+      </div>
 
-<section id="projects" class="container projects">
-<h2>Projects</h2>
-<div class="projects-grid" id="projects-grid" aria-live="polite">
-<!-- Project cards will be rendered here by JS or add static cards here -->
-</div>
-</section>
+      <div class="hero-right" aria-hidden="true">
+        <!-- Replace with your image at assets/images/avatar.png if you prefer -->
+        <svg class="hero-art" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract gradient blob">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#4dd0c8"/>
+              <stop offset="1" stop-color="#6ee7b7"/>
+            </linearGradient>
+            <filter id="f" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="18" result="b"/>
+            </filter>
+          </defs>
+          <g filter="url(#f)">
+            <path fill="url(#g)" d="M120 20 C200 -20 320 10 355 90 C390 170 360 260 280 310 C200 360 100 360 60 300 C20 240 40 120 120 20Z"/>
+          </g>
+          <text x="210" y="230" text-anchor="middle" font-size="120" fill="#02111a" font-weight="700">A</text>
+        </svg>
+      </div>
+    </section>
 
-<!-- Contact -->
-<section id="contact" class="container contact">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:armanborjikhani16@gmail.com">armanborjikhani16@gmail.com</a></p>
-<p>LinkedIn: <a id="linkedin-link" href="https://www.linkedin.com/in/ArmanBorjikhani" target="_blank" rel="noopener">Profile</a></p>
-</section>
-</main>
+    <!-- ABOUT -->
+    <section id="about" class="container about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I study applied mathematics with a CS minor. I design numerical algorithms, evaluate model behaviour, and explore neural mechanisms for intelligence.</p>
+          <p>Currently building tools for fast linear solvers and reproducible NeuroAI experiments. Looking for PhD opportunities in the U.S.</p>
+          <p class="muted">Want deep technical detail? My projects have full READMEs and reproducible notebooks.</p>
+        </div>
 
+        <div class="about-card">
+          <!-- Swap avatar image here if you have one -->
+          <div class="avatar-large" aria-hidden="true">A</div>
+          <dl class="info-list">
+            <div><dt>Location</dt><dd>Azerbaijan (Asia/Baku)</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:armanborjikhani16@gmail.com">armanborjikhani16@gmail.com</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a id="linkedin-link" href="https://www.linkedin.com/in/ArmanBorjikhani" target="_blank" rel="noopener">ArmanBorjikhani</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-<footer>
-<p>&copy; <span id="year"></span> Arman Borjikhani</p>
-</footer>
+    <!-- PROJECTS -->
+    <section id="projects" class="container projects">
+      <h2>Selected Projects</h2>
+      <p class="muted">Small, focused codebases with tests and notebooks.</p>
 
+      <div class="projects-grid" id="projects-grid" aria-live="polite">
+        <!-- Sample cards — JS will also render these; replace links below with your repos -->
+        <article class="card">
+          <h3>NeuroAI-Toolkit</h3>
+          <p>Spiking neuron simulations, reproducible analysis. Small, fast C++/Python bindings.</p>
+          <div class="card-meta">
+            <a href="https://github.com/arman/neuroai-toolkit" target="_blank" rel="noopener">GitHub</a>
+            <span class="tag">NeuroAI</span>
+          </div>
+        </article>
 
-<script src="js/scripts.js"></script>
+        <article class="card">
+          <h3>Fast-Thomas-Solver</h3>
+          <p>High-performance tridiagonal solver with benchmarks and vectorized implementations.</p>
+          <div class="card-meta">
+            <a href="https://github.com/arman/fast-thomas-solver" target="_blank" rel="noopener">GitHub</a>
+            <span class="tag">Numerics</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>ImageSeg-MLP</h3>
+          <p>Educational MLP-based segmentation pipeline implemented from scratch for teaching.</p>
+          <div class="card-meta">
+            <a href="https://github.com/arman/imageseg-mlp" target="_blank" rel="noopener">GitHub</a>
+            <span class="tag">ML</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you want to collaborate, hire, or discuss a PhD: <a href="mailto:armanborjikhani16@gmail.com">armanborjikhani16@gmail.com</a></p>
+      <p class="muted">Or connect on <a href="https://www.linkedin.com/in/ArmanBorjikhani" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>&copy; <span id="year"></span> Arman Borjikhani</div>
+      <div class="muted">Built with clarity • Designed for readability</div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>

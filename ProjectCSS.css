@@ -22,3 +22,25 @@ footer{text-align:center;padding:24px;color:var(--muted)}
 .skills li{background:var(--card);padding:6px 10px;border-radius:6px;color:var(--muted)}
 .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#022; text-decoration:none;margin-right:8px}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+
+/* NAVBAR */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+.brand{font-weight:700;text-decoration:none;color:var(--text)}
+.nav-menu{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+.nav-menu a{text-decoration:none;color:var(--muted)}
+.nav-toggle{display:none;background:transparent;border:0;padding:8px}
+.nav-toggle .hamburger{display:block;width:22px;height:2px;background:var(--text);position:relative}
+.nav-toggle .hamburger::after,.nav-toggle .hamburger::before{content:"";position:absolute;left:0;width:22px;height:2px;background:var(--text);}
+.nav-toggle .hamburger::before{top:-7px}
+.nav-toggle .hamburger::after{top:7px}
+
+
+/* Mobile */
+@media (max-width:800px){
+.hero{grid-template-columns:1fr;}
+.about-grid{grid-template-columns:1fr}
+.nav-menu{position:absolute;right:16px;top:64px;flex-direction:column;background:rgba(2,6,23,0.9);padding:12px;border-radius:8px;display:none}
+.nav-toggle{display:block}
+.nav-menu.show{display:flex}
+}

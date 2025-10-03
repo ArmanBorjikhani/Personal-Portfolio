@@ -499,7 +499,7 @@ footer .text span a:hover{
 }
 
 .open-btn {
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
     color: white;
     border: none;
     padding: 12px 25px;
@@ -515,21 +515,19 @@ footer .text span a:hover{
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
 
+
 .download-btn {
-    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    padding: 12px 25px; /* Space inside the button */
-    font-size: 16px; /* Text size */
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
     font-weight: bold;
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    transition: all 0.3s ease; /* Smooth hover effect */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-    transform: translateY(-3px); /* Lift effect */
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* Deeper shadow */
-    background: linear-gradient(90deg, #2575fc, #6a11cb); /* Gradient flip */
-}
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);}
